@@ -6,7 +6,7 @@
     <div style="margin-top: 400px;" >   
         <p>the current time is {{ time }}.</p>
 
-        <Link href="/users" class="text-blue-500"
+        <Link href="/users" class="text-red-500"
         preserve-scroll
         >
         Refresh</Link>

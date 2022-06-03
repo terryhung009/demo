@@ -1,10 +1,21 @@
 <template>
-    <nav>
-        <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/users">Users</Link></li>
-            <li><Link href="/settings">Settings</Link></li>
-            <li><Link href="/logout" method="post">Log out</Link></li>
+    <nav class="mt-6">
+        <ul class="list-disc">
+            <li><Link href="/" classs="text-blue-500 hover:underline"
+            :class="{'font-bold underline': $page.url === '/'}"
+            >
+            Home</Link></li>
+            <li><Link href="/users?foo=bar" classs="text-blue-500 hover:underline"
+            :class="{'font-bold underline': $page.url === '/users'}"
+            >
+            Users</Link></li>
+            <li><Link href="/settings" classs="text-blue-500 hover:underline"
+            :class="{'font-bold underline': $page.url === '/settings'}"
+            >
+            Settings</Link></li>
+            <li><Link href="/logout" method="post" :data="{ foo : 'bar'}" as="button"  classs="text-blue-500 hover:underline"
+            
+            >Log out</Link></li>
         </ul>
     </nav>
 

@@ -32,15 +32,17 @@ Route::get('/', function () {
 });
 
 Route::get('/users', function () {
-    sleep(2);
+    // sleep(2);
 
     return inertia::render(
-        'Users'
+        'Users',[
+            'time' => now()->toTimeString()
+        ]
     );
 });
 
 Route::get('/settings', function () {
-    sleep(2);
+    // sleep(2);
 
     return inertia::render(
         'Settings'
@@ -48,5 +50,6 @@ Route::get('/settings', function () {
 });
 Route::post('/logout', function () {
 
-    dd('logging the user out');
+    // dd('logging the user out');
+    dd(request('foo'));
 });

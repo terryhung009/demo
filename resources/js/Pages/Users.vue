@@ -19,16 +19,15 @@
 </template>
 
 
-<script>
+<script setup>
 // import { Link } from '@inertiajs/inertia-vue3';
 // import Nav from "../Shared/Nav"
 import { Link } from "@inertiajs/inertia-vue3"
 import Layout from "../Shared/Layout"
 
+defineProps({
+    time:String
+});
 
-export default {
-    components: { Layout, Link },
-    props: { time: String }
-};
 
 </script>

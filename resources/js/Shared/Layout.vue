@@ -7,7 +7,7 @@
                 My App
             </h1>
 
-            <p class="text-sm ml-4">Welcome Back , {{ username }} !</p>
+            <p class="text-sm ml-4">Welcome Back , {{ $page.props.auth.user.username }} !</p>
             </div>
             <Nav />
         </header>
@@ -32,8 +32,11 @@ export default {
     components: {
         Nav,
     },
-    props:{
-        username:String
+    
+    computed:{
+        username(){
+            return this.$page.props.auth.user.username;
+        }
     }
 }
 </script>

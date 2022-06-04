@@ -1,5 +1,5 @@
 <template>
-    <Layout :username="username">
+    <Layout >
         <h1 class="text-3xl font-bold">Home</h1>
 
 
@@ -20,9 +20,7 @@ import Layout from "../Shared/Layout"
 export default {
     components:{ Layout },
 
-    props:{
-        username:String
-    }
+    
 
 };
 

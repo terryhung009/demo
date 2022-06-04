@@ -1,18 +1,24 @@
 <template>
-    <h1>Settings</h1>
+<Layout>
+        <h1 class="text-3xl font-bold">Settings</h1>
 
-    <Nav />
+
+    </Layout>
+    
+
+    
 
 </template>
 
 
 <script>
 // import { Link } from '@inertiajs/inertia-vue3';
-import Nav from "../Shared/Nav"
+// import Nav from "../Shared/Nav"
+import Layout from "../Shared/Layout"
 
 
 export default {
-    components:{ Nav },
+    components:{ Layout },
 
 };
 

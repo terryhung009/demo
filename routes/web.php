@@ -27,7 +27,9 @@ use Inertia\Inertia;
 // });
 Route::get('/', function () {
     return inertia::render(
-        'Home'
+        'Home',[
+            'username' => 'JonDoe'
+        ]
     );
 });
 

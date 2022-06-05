@@ -1,6 +1,6 @@
 <template>
     
-        <Link href="/" classs="text-blue-500 hover:underline"
+        <Link href="/" classs="text-black-600 hover:underline"
             :class="{ 'font-bold underline': active }">
         
         

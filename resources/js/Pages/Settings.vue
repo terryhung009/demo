@@ -14,13 +14,13 @@
 <script>
 // import { Link } from '@inertiajs/inertia-vue3';
 // import Nav from "../Shared/Nav"
-import Layout from "../Shared/Layout"
+// import Layout from "../Shared/Layout"
 
 
-export default {
-    // components:{ Layout },
-    layout: Layout
+// export default {
+//     // components:{ Layout },
+//     layout: Layout
 
-};
+// };
 
 </script>

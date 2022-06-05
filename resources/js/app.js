@@ -6,10 +6,17 @@ import Layout from "./Shared/Layout";
 
 
 createInertiaApp({
-    resolve: name => {
-        let page = require(`./Pages/${name}`).default;
+    resolve: async name => {
+
+        let page = (await import(`./Pages/${name}`)).default;
+        // let page = require(`./Pages/${name}`).default;
         
-        page.layout=Layout;
+        if(! page.layout){
+            page.layout=Layout;
+
+        }
+        //17行等於上面12-15
+        // page.layout ??= Layout;
 
     
         return page;

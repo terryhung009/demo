@@ -22,8 +22,12 @@
 <script setup>
 // import { Link } from '@inertiajs/inertia-vue3';
 // import Nav from "../Shared/Nav"
-import { Link } from "@inertiajs/inertia-vue3"
-import Layout from "../Shared/Layout"
+// import { Link } from "@inertiajs/inertia-vue3"
+// import Layout from "../Shared/Layout"
+
+// export default{
+
+// };
 
 defineProps({
     time:String

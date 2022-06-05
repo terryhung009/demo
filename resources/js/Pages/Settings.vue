@@ -1,9 +1,9 @@
 <template>
-<Layout>
+
         <h1 class="text-3xl font-bold">Settings</h1>
 
 
-    </Layout>
+    
     
 
     
@@ -18,7 +18,8 @@ import Layout from "../Shared/Layout"
 
 
 export default {
-    components:{ Layout },
+    // components:{ Layout },
+    layout: Layout
 
 };
 

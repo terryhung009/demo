@@ -4,7 +4,7 @@
         <header class="flex justify-between">
             <div class="flex items-center">
             <h1 class="font-bold text-lg">
-                My App
+                <input type="text" value="My App" name="" id="">
             </h1>
 
             <p class="text-sm ml-4">Welcome Back , {{ $page.props.auth.user.username }} !</p>

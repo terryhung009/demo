@@ -29,6 +29,8 @@ createInertiaApp({
             // .component('Head',Head)
             .mount(el)
     },
+
+    title:title=>"My Great :" + title
 });
 
 InertiaProgress.init({

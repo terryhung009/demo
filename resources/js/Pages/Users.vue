@@ -1,4 +1,5 @@
 <template>
+    <Head title="My App - User" />
     <Layout>
         <h1 class="text-3xl font-bold">
             Users
@@ -20,6 +21,7 @@
 
 
 <script setup>
+import  {Head} from "@inertiajs/inertia-vue3"
 // import { Link } from '@inertiajs/inertia-vue3';
 // import Nav from "../Shared/Nav"
 // import { Link } from "@inertiajs/inertia-vue3"
@@ -35,3 +37,8 @@ defineProps({
 
 
 </script>
+
+<!-- <script setup>
+import  {Head} from "@inertiajs/inertia-vue3"
+
+</script> -->

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,13 +33,26 @@ Route::get('/', function () {
 });
 
 Route::get('/users', function () {
-    // sleep(2);
+    // return User::paginate(10);
 
     return inertia::render(
         'Users',[
-            'time' => now()->toTimeString()
-        ]
-    );
+            'users' => User::paginate(10)
+                
+        ]);
+        
+    
+
+    // sleep(2);
+
+    // return inertia::render(
+    //     'Users',[
+    //         'users' => User::all()->map(fn($user)=>[
+    //             'id' =>$user->id,
+    //             'name' =>$user->name
+    //         ])
+    //     ]
+    // );
 });
 
 Route::get('/settings', function () {
